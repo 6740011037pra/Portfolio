@@ -1,0 +1,403 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.section{
+  background: transparent;
+}
+
+.cute-card,
+.interests-big-box,
+.cute-box{
+  background: #ffffff;
+  border: 2px dotted #ffb3d9;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(255,182,213,.35);
+}
+
+header{
+  background:#ffb6d5;
+  padding:15px 20px;
+  position:sticky;
+  top:0;
+  z-index: 1000;        /* <<< บังคับให้อยู่บนสุด */
+}
+
+
+/* Navbar */
+header{
+  background:#ffb6d5;
+  padding:15px 20px;
+  position:sticky;
+  top:0;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#fff;
+  font-weight:600;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#fff;
+  font-weight:800;
+  transition:.3s;
+}
+
+.menu a:hover{
+  color:#ffe3f0;
+}
+/* Hero Layout */
+.hero-container{
+  max-width:1000px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+}
+
+/* Text */
+.hero-text{
+  flex:1;
+  text-align:left;
+}
+
+.hero-text h2{
+  color:#ff5fa2;
+  font-size:28px;
+  margin-bottom:10px;
+  font-family: 'Fredoka','Itim',cursive;
+}
+
+/* Image */
+.hero-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero-image img{
+  width:260px;
+  height:260px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.2);
+}
+
+/* Section */
+.section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
+  color:#ff5fa2;
+}
+
+.soft-bg{
+  background:#fff0f7;
+}
+
+/* ================= Skills Progress Bar ================= */
+.skills-bar{
+  text-align:left;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.skills-bar h2{
+  text-align:left;
+  margin-bottom:30px;
+  color:#222;
+}
+
+.skill-item{
+  margin-bottom:25px;
+}
+
+.skill-item p{
+  font-weight:500;
+  margin-bottom:8px;
+}
+
+
+/* หลอดพื้นหลัง */
+.progress{
+  width:100%;
+  height:14px;
+  background:#e5e5e5;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+/* หลอดแถบสี */
+.progress-bar{
+  height:100%;
+  background:linear-gradient(90deg,#7b2ff7,#ff3cac);
+  border-radius:20px;
+  transition:width .6s ease;
+}
+
+
+.skill-list span{
+  background:#ffb6d5;
+  color:#fff;
+  padding:8px 16px;
+  border-radius:20px;
+  font-size:10px;
+}
+
+/* Cards */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* โทนพาสเทล */
+.pastel{
+  background: linear-gradient(135deg,#fff,#ffeef6);
+}
+
+/* เด้งตอน hover */
+.cute-box:hover{
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(255,154,203,.45);
+}
+
+/* หัวข้อ */
+.cute-box h2{
+  color:#ffb6d5;
+  font-size:300px;
+  margin-bottom:15px;
+}
+
+/* ลิงก์ */
+.work-link{
+  display:inline-block;
+  background: linear-gradient(135deg,#ffb6d5,#ffa3cb);
+  color:white;
+  padding:12px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  animation: bounce 2s infinite;
+}
+
+/* ของตกแต่ง */
+.decor{
+  position:absolute;
+  font-size:22px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.star{ top:-10px; left:20px; }
+.heart{ top:-10px; right:20px; }
+
+/* ===== Animation ===== */
+@keyframes popIn{
+  0%{transform:scale(.8);opacity:0;}
+  100%{transform:scale(1);opacity:1;}
+}
+
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-6px);}
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-8px);}
+  100%{transform:translateY(0);}
+}
+/* ===== ตัวอักษร ===== */
+body{
+  background: linear-gradient(180deg,#ffe6ef,#fff1f6);
+  font-family: 'Fredoka','Itim',cursive;
+  font-weight:800;
+  font-size: 20px;
+  color:#ff5fa2;
+}
+
+/* ===== กล่องหลัก ===== */
+.cute-card{
+  position: relative;
+  width: 80%;
+  margin: 40px auto;
+  padding: 35px 30px;
+  background: linear-gradient(135deg,#ffffff,#fff0f7);
+  border-radius: 30px;
+  border: 3px dotted #ffb3d9;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255,182,213,.35);
+  animation: popIn .8s ease;
+  transition: .3s;
+}
+
+.cute-card:hover{
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(255,154,203,.45);
+}
+
+/* ===== หัวข้อ ===== */
+.hero-box h1{
+  color:#ff5fa2;
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.about-box h2{
+  color:#ff5fa2;
+  font-size:32px;
+  margin-bottom:15px;
+}
+/* ===== interrest ===== */
+/* ===== กรอบใหญ่ ===== */
+.interests-big-box{
+  width: 80%;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: linear-gradient(135deg,#ffffff,#fff0f7);
+  border-radius: 35px;
+  border: 3px dotted #ffb3d9;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(255,182,213,.35);
+  animation: popIn .8s ease;
+}
+
+/* หัวข้อใหญ่ */
+.interests-big-box h2{
+  font-family: 'Fredoka','Itim',cursive;
+  font-size: 34px;
+  color:#ff5fa2;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 0 #ffd6e8;
+}
+
+/* กล่องรวมกรอบเล็ก */
+.interest-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===== กรอบเล็กแต่ละอัน Interests===== */
+.interest-card{
+  background: linear-gradient(135deg,#fff,#ffeef6);
+  padding: 16px 24px;
+  border-radius: 25px;
+  border: 2px dashed #ffb3d9;
+  font-size: 18px;
+  color:#ff5fa2;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(255,182,213,.35);
+
+  transition: .3s;
+  animation: floatIn .6s ease;
+}
+
+/* เอฟเฟกต์ตอนชี้ */
+.interest-card:hover{
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(255,154,203,.45);
+}
+
+/* ===== Animation ===== */
+@keyframes popIn{
+  0%{transform:scale(.85);opacity:0;}
+  100%{transform:scale(1);opacity:1;}
+}
+
+@keyframes floatIn{
+  0%{transform:translateY(10px);opacity:0;}
+  100%{transform:translateY(0);opacity:1;}
+}
+/* ===== contact ===== */
+.contact-card button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(4deg, #ff5fa2);
+  transition: transform 0.2s ease;
+}
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.title {
+  margin-bottom: 2px;
+  font-size: 32px;
+   color:#ff5fa2;
+}
+
+/* เอาช่องว่างบน My Work ออก */
+.work-section{
+  padding-top: 20px;   /* เดิม 80px */
+  padding-bottom: 60px;
+}
+
+.work-section .interests-big-box{
+  margin-top: 0;
+}
+/* skill */
+.section h2{
+  margin-bottom:30px;
+  color:#ff5fa2;
+}
+.footer{
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: #ff9acb;
+}
+
+
+
+
+
+
+
