@@ -243,11 +243,17 @@ header{
 /* ===== ตัวอักษร ===== */
 body{
   background: linear-gradient(180deg,#ffe6ef,#fff1f6);
-  font-family: 'Fredoka','Itim',cursive;
-  font-weight:800;
-  font-size: 20px;
+  font-family: 'Poppins','Fredoka','Itim',sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   color:#ff5fa2;
 }
+h1, h2, h3 {
+  font-family: 'Fredoka','Itim',cursive;
+  font-weight: 700;
+  color: #ff5fa2;
+}
+
 
 /* ===== กล่องหลัก ===== */
 .cute-card{
@@ -433,6 +439,13 @@ body{
 .icon-img:hover {
   transform: translateY(-6px) scale(1.12);
   box-shadow: 0 12px 25px rgba(255, 105, 180, 0.55);
+}
+
+.icon-img img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
 }
 
 
