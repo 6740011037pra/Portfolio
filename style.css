@@ -386,13 +386,53 @@ body{
   margin-bottom:30px;
   color:#ff5fa2;
 }
-.footer{
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 13px;
-  color: #ff9acb;
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+
+  font-family: 'Poppins', cursive;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #ff6fae;
+}
+
+/* ===== Contact Icons (Image Version) ===== */
+.contact-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* วงกลม */
+.icon-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #ffe0ef, #fff6d8);
+  box-shadow: 0 6px 15px rgba(255, 154, 203, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.35s ease;
+}
+
+/* รูปโลโก้ */
+.icon-img img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* Hover เอฟเฟกต์ */
+.icon-img:hover {
+  transform: translateY(-6px) scale(1.12);
+  box-shadow: 0 12px 25px rgba(255, 105, 180, 0.55);
 }
 
 
